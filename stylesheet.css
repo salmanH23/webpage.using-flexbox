@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.training-section{
+    width: 100%;
+    background-image:url(image.jpg);
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.training-section h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+.cantainer{
+    width: 1170px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.training-items{
+    flex-basis: 23%;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #fff;
+}
+.training-items h3{
+    padding: 10px 0px;
+}
+.training-items p{
+    font-size: 14px;
+    padding: 10px;
+}
+.training-items button{
+    background-color: blue;
+    padding: 10px 25px;
+    margin: 10px 0px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.training-items:hover{
+    background-color: blue;
+}
+.training-items:hover h3,.training-items:hover p{
+    color: #fff;
+}
+.training-items:hover button{
+    background-color: #fff;
+    color: blue;
+}
+@media (max-width:600px){
+    .cantainer{
+        width: 100%;
+        margin: 0px;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .training-items{
+        width: 95%;
+
+    }
+    .training-items h3{
+        font-size: 22px;
+    }
+    .training-items p{
+        font-size: 16px;
+    }
+    .training-items button{
+        font-size: 22px;
+    }
+}
